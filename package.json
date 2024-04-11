@@ -5,13 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "start": "node  -r dotenv/config --experimental-json-modules  src/index.js",
+    "dev": "nodemon -r dotenv/config --experimental-json-modules  src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "arka",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongodb": "^6.5.0",
