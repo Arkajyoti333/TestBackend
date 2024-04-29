@@ -1,10 +1,11 @@
 import mongoose from "mongoose" ;
 import express from 'express';
+import { Envconfig } from "../config/config.js";
 
 const app = express();
 const port = 3000;
 
-const DbString = "mongodb+srv://arkajyotikundu415:Arkajyoti8523@clustertest.2nyhdwm.mongodb.net/TestConnections";
+const DbString = Envconfig.MongodbUrl;
 
 
 const DbConnection=async()=>{
