@@ -1,6 +1,6 @@
 import app from './app.js';
 // require('dotenv').config()
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 
 
 import DbConnection from "./dbConnection/index.js";
@@ -8,9 +8,11 @@ import DbConnection from "./dbConnection/index.js";
 
 dotenv.config({
   path: './.env'
-})
+});
+
+
 // console.log(process.env);
-const port=process.env.PORT||3000;
+const port=process.env.PORT||8000;
 
 DbConnection()
 .then(()=>{
