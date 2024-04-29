@@ -1,9 +1,5 @@
 import dotenv from 'dotenv';
 dotenv.config();
-
-//  config();
-
-//  console.log(process.env.PORT)
  const ___config={
     port:process.env.PORT,
     MongodbUrl:process.env.MONGODB_URI,
@@ -11,7 +7,7 @@ dotenv.config();
 
  }
 
-//  console.log(___config.port)
+
 
  export const Envconfig=Object.freeze(___config);
 
