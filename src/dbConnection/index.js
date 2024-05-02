@@ -15,7 +15,7 @@ const DbConnection=async()=>{
    })
   .catch((Error)=>{
     console.error("Error connecting to the database:", Error);
-  process.exit(1); // Exit the process if unable to connect to the database
+  process.exit(1); // Exit the process if unable to connect to the database 
   })
       DBConnectionInstance.then(() => {
           let data=mongoose.connection.host;
@@ -28,6 +28,17 @@ const DbConnection=async()=>{
 
 
 export default DbConnection;
+
+
+
+
+
+
+
+
+
+
+
 
 // const DBConnectionInstance=mongoose.connect(DbString)
 //     .then(() => {
