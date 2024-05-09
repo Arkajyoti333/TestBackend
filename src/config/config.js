@@ -10,6 +10,7 @@ dotenv.config();
     MongodbUrl:process.env.MONGODB_URI,
     corsOrigin:process.env.CORS_ORIGIN,
     enviroment:process.env.NODE_ENV,
+    jwtSecret:process.env.JWT_SECRET,
  }
 
 

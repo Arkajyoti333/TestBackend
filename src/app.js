@@ -34,13 +34,13 @@ app.use(express.static("public"));
 app.get('/',(req,res)=>{
 
  const error= createHttpError(400,"Something went to wrong")
-//  throw error;
+   throw error;
 
-   res.json({message:"  Wellcome to Home page !!!"})
+  // res.json({message:"  Wellcome to Home page !!!"})
 
 })
 
-app.use('/api/user',userRouter)
+app.use('/api/user',userRouter);
 
 
 
