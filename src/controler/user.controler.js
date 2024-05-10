@@ -124,7 +124,7 @@ try {
 //   console.log(User._id);
       res.json({
           accessToken:token,
-          message:`${User.name} : Successfully login ! `,
+          message:`${User.name} : Successfully logged in ! `,
       })
    
 }
